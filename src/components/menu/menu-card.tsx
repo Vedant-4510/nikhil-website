@@ -54,7 +54,8 @@ export function MenuCard({ item }: MenuCardProps) {
         <div className="mt-4 flex items-center justify-between gap-3 border-t border-slate-100 pt-4">
           <p className="text-lg font-semibold text-slate-900">{formatCurrency(item.price)}</p>
           <p className="text-right text-xs text-slate-500">
-            {dictionary.menu.availabilityLabel}: {item.isAvailable ? "In stock" : "Out of stock"}
+            {dictionary.menu.availabilityLabel}:{" "}
+            {item.isAvailable ? dictionary.menu.inStock : dictionary.menu.outOfStock}
           </p>
         </div>
 

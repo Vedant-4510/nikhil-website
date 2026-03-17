@@ -49,6 +49,8 @@ export interface Dictionary {
     title: string;
     subtitle: string;
     availabilityLabel: string;
+    inStock: string;
+    outOfStock: string;
   };
   cart: {
     title: string;
@@ -181,6 +183,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       title: "Menu",
       subtitle: "Comfort street food with polished flavor and quality ingredients.",
       availabilityLabel: "Availability",
+      inStock: "In stock",
+      outOfStock: "Out of stock",
     },
     cart: {
       title: "Your cart",
@@ -317,6 +321,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       title: "ಮೆನು",
       subtitle: "ಪ್ರೀಮಿಯಂ ಗುಣಮಟ್ಟದ ಪದಾರ್ಥಗಳಿಂದ ತಯಾರಿಸಿದ ಸ್ಟ್ರೀಟ್ ಫುಡ್ ರುಚಿ.",
       availabilityLabel: "ಲಭ್ಯತೆ",
+      inStock: "ಲಭ್ಯವಿದೆ",
+      outOfStock: "ಸ್ಟಾಕ್ ಇಲ್ಲ",
     },
     cart: {
       title: "ನಿಮ್ಮ ಕಾರ್ಟ್",
